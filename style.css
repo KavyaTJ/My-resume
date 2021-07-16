@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+  background: rgb(222, 227, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+   background-image: url(./ks.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+  max-width: 800px;
+  min-height: 800px;
+ display: grid;
+ grid-template-columns: 1fr 2fr ;
+ margin: 50px;
+ box-shadow: 20px 20px 50px 10px rgb(12, 12, 12);
+}
+
+.container .left_side{
+    position: relative;
+    background: rgb(12, 12, 90);
+    padding: 30px;
+}
+.profile{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+border-bottom: 1px solid gray;
+}
+.profile .image{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile .image img{
+position: absolute;
+top: 0%;
+left: 0%;
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+.profile h1{
+  color: aliceblue;
+  font-size: 2em;  
+  margin-top: 20px;
+  text-transform:uppercase ;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.contactinfo{
+    padding-top: 20px;
+    
+}
+.title{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactinfo ul{
+    position: relative;
+}
+.contactinfo ul li{
+   position:relative;
+   list-style: none;
+
+   cursor: pointer; 
+   text-align:left;
+   
+}
+.contactinfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(223, 24, 84);
+}
+.contactinfo ul li span{
+    color: rgb(117, 214, 247);
+    font-weight: 300;
+    padding-bottom: 5px;
+    list-style: none;
+    padding-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contactinfo ul li span p{
+  margin-left: 37px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aqua;
+    
+}
+.skills .title{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.skills ul li {
+    list-style-type: none;
+}
+.skills ul li .icon {
+    float: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    font-size: 60px;
+    color: rgb(240, 240, 240);
+    font-size: 36px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .skills ul li .icon :hover {
+    background-color:  rgb(12, 12, 14);
+    border-radius: 10px;
+  }
+  .active {
+    background-color: #04AA6D;
+  }
+.hobbies .title{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.hobbies ul li{
+    position:relative;
+   padding-bottom: 5px;
+   margin-left: 20px;
+    cursor: pointer; 
+    text-align:left;
+    padding-left: 10px;
+    color: aquamarine;
+    list-style-type: square;
+    
+ }
+ .hobbies ul li:hover{
+color: rgb(225, 31, 63); 
+
+
+}
+.container .right_side{
+    position: relative;
+    background: rgb(192, 192, 243);
+    padding: 40px;
+    
+}
+.styled-table {
+ 
+    background-color:  rgb(166, 166, 191);
+    font-size: 0.9em;
+    font-family: sans-serif;
+    max-width: 500px;
+    width: 600px;
+    height: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border-collapse:collapse;
+        
+}
+th{
+    color: rgb(6, 7, 7);
+    font-family: sans-serif;
+    }
+td{
+    color: rgb(25, 29, 29);
+    padding: 10px;
+}
+.profiles .title{
+    color: rgb(18, 41, 61);
+    font-size: 1.6em;  
+    margin-top: 10px;
+    text-transform:uppercase ;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.4em;
+  } 
+  .education .title{
+    color: rgb(18, 41, 61);
+    font-size: 1.6em;  
+    margin-top: 20px;
+    text-transform:uppercase ;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.4em;
+  }
+  .certifications .title{
+    color:  rgb(18, 41, 61);
+    font-size: 1.6em;  
+    margin-top: 20px;
+    text-transform:uppercase ;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.4em;
+  }
+
+ .certifications ul li{
+    position:relative;
+   background-position: 100%;
+    margin: 10px 10px;
+    cursor: pointer; 
+    text-align:left;
+ }
+ .Projects .title{
+    color:  rgb(18, 41, 61);
+    font-size: 1.6em;  
+    margin-top: 20px;
+    text-transform:uppercase ;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.4em;
+  }
+
+  .Projects ul li{
+    position:relative;
+   background-position: 100%;
+    margin: 10px 10px;
+    cursor: pointer; 
+    text-align:left;
+ }
